@@ -15,6 +15,7 @@
     opacity: 1;
 }
 
+
 @media (min-width: 600px) {
     .Modal {
         top: 30%;
@@ -46,4 +47,27 @@
 .ModalX:hover {
     cursor: pointer;
     color: red;
+  
+}
+
+/* Modal choose one class for modal entry point */
+
+.ModalFromLeft {
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+.ModalFromRight {
+    transform: translateX(100vw);
+    opacity: 0;
+}
+
+.ModalFromTop {
+    transform: translateY(-100vh);
+    opacity: 0;
+}
+
+.ModalFromBottom {
+    transform: translateY(100vh);
+    opacity: 0;
 }
