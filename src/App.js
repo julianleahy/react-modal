@@ -8,9 +8,12 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Modal>
+                <Modal
+                    show={this.props.showModal}
+                    click={this.props.toggleModal}>
                     Modal Content
                 </Modal>
+                <button onClick={this.props.toggleModal}>Show Modal</button>
             </div>
         );
     }
